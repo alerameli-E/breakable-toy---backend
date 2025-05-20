@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Apple iPhone 14",
+    "category": "Electronics",
+    "unitPrice": 999.99,
+    "expirationDate": null,
+    "quantityInStock": 25,
+    "creationDate": "2024-01-10T10:00:00",
+    "updateDate": "2024-03-01T12:30:00"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S22",
+    "category": "Electronics",
+    "unitPrice": 899.5,
+    "expirationDate": null,
+    "quantityInStock": 30,
+    "creationDate": "2024-01-12T09:45:00",
+    "updateDate": "2024-02-20T11:15:00"
+  },
+  {
+    "id": 3,
+    "name": "Organic Bananas",
+    "category": "Groceries",
+    "unitPrice": 1.2,
+    "expirationDate": "2025-05-20",
+    "quantityInStock": 100,
+    "creationDate": "2025-01-01T08:00:00",
+    "updateDate": "2025-03-05T14:00:00"
+  },
+  {
+    "id": 4,
+    "name": "Dell XPS 13 Laptop",
+    "category": "Electronics",
+    "unitPrice": 1299.99,
+    "expirationDate": null,
+    "quantityInStock": 12,
+    "creationDate": "2024-03-22T14:30:00",
+    "updateDate": "2024-04-10T15:00:00"
+  },
+  {
+    "id": 5,
+    "name": "KitchenAid Mixer",
+    "category": "Home Appliances",
+    "unitPrice": 349.95,
+    "expirationDate": null,
+    "quantityInStock": 40,
+    "creationDate": "2023-11-30T10:00:00",
+    "updateDate": "2024-02-10T09:00:00"
+  },
+  {
+    "id": 6,
+    "name": "Nike Running Shoes",
+    "category": "Apparel",
+    "unitPrice": 120.0,
+    "expirationDate": null,
+    "quantityInStock": 50,
+    "creationDate": "2024-04-01T08:15:00",
+    "updateDate": "2024-04-20T12:00:00"
+  },
+  {
+    "id": 7,
+    "name": "Samsung 55\" Smart TV",
+    "category": "Electronics",
+    "unitPrice": 699.99,
+    "expirationDate": null,
+    "quantityInStock": 18,
+    "creationDate": "2024-02-15T13:00:00",
+    "updateDate": "2024-03-30T14:00:00"
+  },
+  {
+    "id": 8,
+    "name": "Sony Wireless Headphones",
+    "category": "Electronics",
+    "unitPrice": 249.0,
+    "expirationDate": null,
+    "quantityInStock": 35,
+    "creationDate": "2024-01-20T16:00:00",
+    "updateDate": "2024-04-05T18:00:00"
+  },
+  {
+    "id": 9,
+    "name": "Broccoli (Fresh)",
+    "category": "Groceries",
+    "unitPrice": 2.5,
+    "expirationDate": "2025-05-17",
+    "quantityInStock": 80,
+    "creationDate": "2025-04-01T09:00:00",
+    "updateDate": "2025-04-10T10:00:00"
+  },
+  {
+    "id": 10,
+    "name": "Logitech Wireless Mouse",
+    "category": "Electronics",
+    "unitPrice": 39.95,
+    "expirationDate": null,
+    "quantityInStock": 60,
+    "creationDate": "2024-02-10T10:30:00",
+    "updateDate": "2024-03-01T11:00:00"
+  },
+  {
+    "id": 11,
+    "name": "Men's Cotton T-Shirt",
+    "category": "Apparel",
+    "unitPrice": 14.99,
+    "expirationDate": null,
+    "quantityInStock": 200,
+    "creationDate": "2023-10-15T11:00:00",
+    "updateDate": "2024-01-05T13:00:00"
+  },
+  {
+    "id": 12,
+    "name": "LED Desk Lamp",
+    "category": "Home & Office",
+    "unitPrice": 25.99,
+    "expirationDate": null,
+    "quantityInStock": 75,
+    "creationDate": "2023-09-20T10:00:00",
+    "updateDate": "2024-02-15T10:00:00"
+  },
+  {
+    "id": 13,
+    "name": "Instant Coffee Jar",
+    "category": "Groceries",
+    "unitPrice": 8.5,
+    "expirationDate": "2026-01-01",
+    "quantityInStock": 100,
+    "creationDate": "2025-05-01T09:00:00",
+    "updateDate": "2025-05-10T11:00:00"
+  },
+  {
+    "id": 14,
+    "name": "Gaming Keyboard RGB",
+    "category": "Electronics",
+    "unitPrice": 89.0,
+    "expirationDate": null,
+    "quantityInStock": 30,
+    "creationDate": "2024-03-01T14:00:00",
+    "updateDate": "2024-03-15T15:00:00"
+  },
+  {
+    "id": 15,
+    "name": "Wireless Charger Pad",
+    "category": "Electronics",
+    "unitPrice": 19.99,
+    "expirationDate": null,
+    "quantityInStock": 100,
+    "creationDate": "2024-04-05T12:00:00",
+    "updateDate": "2024-04-20T14:00:00"
+  },
+  {
+    "id": 16,
+    "name": "Office Chair Ergonomic",
+    "category": "Furniture",
+    "unitPrice": 199.99,
+    "expirationDate": null,
+    "quantityInStock": 15,
+    "creationDate": "2023-08-10T13:00:00",
+    "updateDate": "2024-02-01T10:00:00"
+  },
+  {
+    "id": 17,
+    "name": "Water Bottle 1L",
+    "category": "Home & Office",
+    "unitPrice": 12.99,
+    "expirationDate": null,
+    "quantityInStock": 90,
+    "creationDate": "2023-11-11T11:11:00",
+    "updateDate": "2024-01-20T09:00:00"
+  },
+  {
+    "id": 18,
+    "name": "Bluetooth Speaker Mini",
+    "category": "Electronics",
+    "unitPrice": 35.0,
+    "expirationDate": null,
+    "quantityInStock": 65,
+    "creationDate": "2024-01-01T08:00:00",
+    "updateDate": "2024-03-01T09:00:00"
+  },
+  {
+    "id": 19,
+    "name": "Acer 24\" Monitor",
+    "category": "Electronics",
+    "unitPrice": 159.99,
+    "expirationDate": null,
+    "quantityInStock": 22,
+    "creationDate": "2024-02-25T15:30:00",
+    "updateDate": "2024-03-05T17:00:00"
+  },
+  {
+    "id": 20,
+    "name": "Women’s Hoodie",
+    "category": "Apparel",
+    "unitPrice": 34.5,
+    "expirationDate": null,
+    "quantityInStock": 70,
+    "creationDate": "2023-10-01T10:00:00",
+    "updateDate": "2024-01-15T10:00:00"
+  },{
+    "id": 21,
+    "name": "Whole Wheat Bread",
+    "category": "Groceries",
+    "unitPrice": 2.5,
+    "expirationDate": "2025-06-01",
+    "quantityInStock": 0,
+    "creationDate": "2025-01-15T10:00:00",
+    "updateDate": "2025-03-10T09:00:00"
+  },
+  {
+    "id": 22,
+    "name": "Organic Milk",
+    "category": "Groceries",
+    "unitPrice": 3.75,
+    "expirationDate": "2025-06-10",
+    "quantityInStock": 15,
+    "creationDate": "2025-01-16T08:00:00",
+    "updateDate": "2025-03-12T10:30:00"
+  },
+  {
+    "id": 23,
+    "name": "Brown Eggs",
+    "category": "Groceries",
+    "unitPrice": 2.0,
+    "expirationDate": "2025-06-12",
+    "quantityInStock": 0,
+    "creationDate": "2025-01-17T09:30:00",
+    "updateDate": "2025-03-13T11:00:00"
+  },
+  {
+    "id": 24,
+    "name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "unitPrice": 45.99,
+    "expirationDate": null,
+    "quantityInStock": 20,
+    "creationDate": "2025-01-18T11:00:00",
+    "updateDate": "2025-03-14T12:00:00"
+  },
+  {
+    "id": 25,
+    "name": "LED Monitor 24in",
+    "category": "Electronics",
+    "unitPrice": 129.99,
+    "expirationDate": null,
+    "quantityInStock": 0,
+    "creationDate": "2025-01-19T10:15:00",
+    "updateDate": "2025-03-15T13:00:00"
+  },
+  {
+    "id": 26,
+    "name": "Quinoa Pack",
+    "category": "Groceries",
+    "unitPrice": 4.25,
+    "expirationDate": "2025-08-10",
+    "quantityInStock": 10,
+    "creationDate": "2025-01-20T09:00:00",
+    "updateDate": "2025-03-16T09:30:00"
+  },
+  {
+    "id": 27,
+    "name": "Gaming Mouse",
+    "category": "Electronics",
+    "unitPrice": 35.0,
+    "expirationDate": null,
+    "quantityInStock": 50,
+    "creationDate": "2025-01-21T12:00:00",
+    "updateDate": "2025-03-17T10:00:00"
+  },
+  {
+    "id": 28,
+    "name": "Organic Honey",
+    "category": "Groceries",
+    "unitPrice": 6.0,
+    "expirationDate": "2026-01-01",
+    "quantityInStock": 0,
+    "creationDate": "2025-01-22T09:15:00",
+    "updateDate": "2025-03-18T11:30:00"
+  },
+  {
+    "id": 29,
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "unitPrice": 89.99,
+    "expirationDate": null,
+    "quantityInStock": 35,
+    "creationDate": "2025-01-23T10:45:00",
+    "updateDate": "2025-03-19T14:15:00"
+  },
+  {
+    "id": 30,
+    "name": "Canned Beans",
+    "category": "Groceries",
+    "unitPrice": 1.1,
+    "expirationDate": "2025-12-01",
+    "quantityInStock": 5,
+    "creationDate": "2025-01-24T08:20:00",
+    "updateDate": "2025-03-20T10:00:00"
+  },
+  {
+    "id": 31,
+    "name": "Portable Charger",
+    "category": "Electronics",
+    "unitPrice": 25.49,
+    "expirationDate": null,
+    "quantityInStock": 0,
+    "creationDate": "2025-01-25T09:30:00",
+    "updateDate": "2025-03-21T12:30:00"
+  },
+  {
+    "id": 32,
+    "name": "Rice (1kg)",
+    "category": "Groceries",
+    "unitPrice": 1.8,
+    "expirationDate": "2026-03-15",
+    "quantityInStock": 0,
+    "creationDate": "2025-01-26T07:30:00",
+    "updateDate": "2025-03-22T13:00:00"
+  },
+  {
+    "id": 33,
+    "name": "Lettuce (Organic)",
+    "category": "Groceries",
+    "unitPrice": 0.9,
+    "expirationDate": "2025-05-22",
+    "quantityInStock": 12,
+    "creationDate": "2025-01-27T10:30:00",
+    "updateDate": "2025-03-23T11:45:00"
+  },
+  {
+    "id": 34,
+    "name": "Keyboard Mechanical",
+    "category": "Electronics",
+    "unitPrice": 59.99,
+    "expirationDate": null,
+    "quantityInStock": 18,
+    "creationDate": "2025-01-28T09:10:00",
+    "updateDate": "2025-03-24T10:10:00"
+  },
+  {
+    "id": 35,
+    "name": "Sparkling Water Pack",
+    "category": "Groceries",
+    "unitPrice": 3.25,
+    "expirationDate": "2025-09-10",
+    "quantityInStock": 0,
+    "creationDate": "2025-01-29T08:00:00",
+    "updateDate": "2025-03-25T09:15:00"
+  },
+  {
+    "id": 36,
+    "name": "Tomato Sauce Jar",
+    "category": "Groceries",
+    "unitPrice": 2.2,
+    "expirationDate": "2025-10-01",
+    "quantityInStock": 6,
+    "creationDate": "2025-01-30T07:45:00",
+    "updateDate": "2025-03-26T08:30:00"
+  },
+  {
+    "id": 37,
+    "name": "4K HDMI Cable",
+    "category": "Electronics",
+    "unitPrice": 11.99,
+    "expirationDate": null,
+    "quantityInStock": 40,
+    "creationDate": "2025-01-31T09:20:00",
+    "updateDate": "2025-03-27T10:50:00"
+  },
+  {
+    "id": 38,
+    "name": "Peanut Butter",
+    "category": "Groceries",
+    "unitPrice": 3.5,
+    "expirationDate": "2026-01-05",
+    "quantityInStock": 0,
+    "creationDate": "2025-02-01T11:10:00",
+    "updateDate": "2025-03-28T11:00:00"
+  },
+  {
+    "id": 39,
+    "name": "Granola Bars",
+    "category": "Groceries",
+    "unitPrice": 2.8,
+    "expirationDate": "2025-11-10",
+    "quantityInStock": 20,
+    "creationDate": "2025-02-02T10:00:00",
+    "updateDate": "2025-03-29T09:40:00"
+  },
+  {
+    "id": 40,
+    "name": "Smartwatch Band",
+    "category": "Accessories",
+    "unitPrice": 14.99,
+    "expirationDate": null,
+    "quantityInStock": 0,
+    "creationDate": "2025-02-03T08:30:00",
+    "updateDate": "2025-03-30T10:10:00"
+  }
+
+]
