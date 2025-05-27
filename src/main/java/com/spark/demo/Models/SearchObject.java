@@ -25,6 +25,15 @@ public class SearchObject {
     public void setAvailability(String availability) {
         this.availability = availability;
     }
+
+    public SearchObject(String name, String category, String availability) {
+        this.name = name;
+        this.category = category;
+        this.availability = availability;
+    }
+
+    public SearchObject() {
+    }
     
     private String name;
     private String category;

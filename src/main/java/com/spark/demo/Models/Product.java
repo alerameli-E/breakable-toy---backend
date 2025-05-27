@@ -1,6 +1,7 @@
 package com.spark.demo.Models;
 
 public class Product {
+
     private Long id;
     private String name;
     private String category;
@@ -9,9 +10,24 @@ public class Product {
     private String creationDate;
     private String updateDate;
     private Integer quantityInStock;
-    
-    
 
+     public Product() {
+    }
+
+    public Product(Long id, String name, String category, Double unitPrice, String expirationDate,
+                   String creationDate, String updateDate, Integer quantityInStock) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.unitPrice = unitPrice;
+        this.expirationDate = expirationDate;
+        this.creationDate = creationDate;
+        this.updateDate = updateDate;
+        this.quantityInStock = quantityInStock;
+    }
+    
+    
+    
     public Long getId() {
         return id;
     }
@@ -75,6 +91,5 @@ public class Product {
     public void setUpdateDate(String updateDate) {
         this.updateDate = updateDate;
     }
-    
-    
+
 }

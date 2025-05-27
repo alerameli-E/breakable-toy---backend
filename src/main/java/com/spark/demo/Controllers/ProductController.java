@@ -42,9 +42,9 @@ public class ProductController {
     public ResponseEntity updateProduct(@RequestBody Product product, @PathVariable Long id) {
         boolean success = productService.updateProduct(product, id);
         if (success) {
-            return ResponseEntity.ok("Producto actualizado correctamente");
+            return ResponseEntity.ok("Product updated correctly");
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Producto no encontrado");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found");
         }
     }
 
@@ -52,9 +52,9 @@ public class ProductController {
     public ResponseEntity setOutOfStock(@PathVariable Long id) {
         boolean success = productService.manageStock(id);
         if (success) {
-            return ResponseEntity.ok("Stock actualizado");
+            return ResponseEntity.ok("Stock updated");
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Producto no encontrado");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found");
         }
 
     }
@@ -62,9 +62,9 @@ public class ProductController {
     public ResponseEntity setInStock(@PathVariable Long id) {
         boolean success = productService.manageStock(id);
         if (success) {
-            return ResponseEntity.ok("Stock actualizado");
+            return ResponseEntity.ok("Stock updated");
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Producto no encontrado");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Productno found");
         }
 
     }
@@ -73,9 +73,9 @@ public class ProductController {
     public ResponseEntity deleteProduct(@PathVariable Long id) {
         boolean success = productService.deleteProduct(id);
         if (success) {
-            return ResponseEntity.ok("Producto borrado correctamente");
+            return ResponseEntity.ok("Product deleted correctly");
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Producto no encontrado");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found");
         }
     }
 }

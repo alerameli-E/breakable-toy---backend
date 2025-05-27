@@ -20,10 +20,10 @@ import java.util.Map;
 @Service
 public class ProductService {
 
-    private final Map<Long, Product> productosEnMemoria;
+    private final Map<Long, Product> productsInMemory;
 
     public ProductService() {
-        this.productosEnMemoria = loadProductsFromFile();
+        this.productsInMemory = loadProductsFromFile();
     }
 
     private Map<Long, Product> loadProductsFromFile() {
@@ -39,11 +39,11 @@ public class ProductService {
     }
 
     public List<Product> getAllProducts() {
-        return new ArrayList<>(productosEnMemoria.values());
+        return new ArrayList<>(productsInMemory.values());
     }
 
     public List<String> getUniqueCategories() {
-        return productosEnMemoria.values().stream()
+        return productsInMemory.values().stream()
                 .map(Product::getCategory)
                 .filter(Objects::nonNull)
                 .distinct()
@@ -52,7 +52,7 @@ public class ProductService {
     }
 
     public List<Product> getFilteredProducts(SearchObject searchObject) {
-        return productosEnMemoria.values().stream()
+        return productsInMemory.values().stream()
                 .filter(p -> "".equals(searchObject.getName()) || p.getName().toLowerCase().contains(searchObject.getName().toLowerCase()))
                 .filter(p -> searchObject.getCategory().equalsIgnoreCase("AC") || p.getCategory().equalsIgnoreCase(searchObject.getCategory()))
                 .filter(p -> matchesAvailability(p, searchObject.getAvailability()))
@@ -75,46 +75,50 @@ public class ProductService {
     }
 
     public Product insertProduct(Product producto) {
-        long newId = productosEnMemoria.keySet().stream().mapToLong(id -> id).max().orElse(0) + 1;
+        long newId = productsInMemory.keySet().stream().mapToLong(id -> id).max().orElse(0) + 1;
         producto.setId(newId);
-        productosEnMemoria.put(newId, producto);
+        productsInMemory.put(newId, producto);
         return producto;
     }
 
     public boolean updateProduct(Product producto, Long id) {
-        Product existente = productosEnMemoria.get(id);
-        if (existente != null) {
-            existente.setName(producto.getName());
-            existente.setCategory(producto.getCategory());
-            existente.setQuantityInStock(producto.getQuantityInStock());
-            existente.setUnitPrice(producto.getUnitPrice());
-            existente.setExpirationDate(producto.getExpirationDate());
-            existente.setUpdateDate(producto.getUpdateDate());
+        Product existingProduct = productsInMemory.get(id);
+        if (existingProduct != null) {
+            existingProduct.setName(producto.getName());
+            existingProduct.setCategory(producto.getCategory());
+            existingProduct.setQuantityInStock(producto.getQuantityInStock());
+            existingProduct.setUnitPrice(producto.getUnitPrice());
+            existingProduct.setExpirationDate(producto.getExpirationDate());
+            existingProduct.setUpdateDate(producto.getUpdateDate());
             return true;
         }
         return false;
     }
 
     public boolean deleteProduct(Long id) {
-        return productosEnMemoria.remove(id) != null;
+        return productsInMemory.remove(id) != null;
     }
 
     public boolean manageStock(Long id) {
-        Product existente = productosEnMemoria.get(id);
-        if (existente != null) {
+        Product existingProduct = productsInMemory.get(id);
+        
+        int defaultStock = 10;
+        
+        String datePatern = "yyyy-MM-dd HH:mm:ss"; 
+        if (existingProduct != null) {
 
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(datePatern);
             String formattedDate = LocalDateTime.now().format(formatter);
 
-            int stock = existente.getQuantityInStock();
+            int stock = existingProduct.getQuantityInStock();
 
             if (stock == 0) {
-                existente.setQuantityInStock(10);
+                existingProduct.setQuantityInStock(defaultStock);
             } else {
-                existente.setQuantityInStock(0);
+                existingProduct.setQuantityInStock(0);
             }
 
-            existente.setUpdateDate(formattedDate);
+            existingProduct.setUpdateDate(formattedDate);
             return true;
         }
         return false;
