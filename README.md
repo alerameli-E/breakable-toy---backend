@@ -8,7 +8,6 @@ This is the backend for the **Breakable Toy** application, built with Java and S
 - Spring Boot 3.3
 - Maven
 - Jackson (for JSON handling)
-- Dependency Injection with `@Service` and `@RestController`
 
 ## Requirements
 
