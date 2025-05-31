@@ -59,7 +59,7 @@ cd backend-breakable-toy
 
 This backend is designed to work directly with a React frontend application that consumes the provided endpoints.
 
-> Ensure it runs on port `8080` for correct integration with the frontend.
+> Ensure it runs on port `9090` for correct integration with the frontend.
 > Front end application https://github.com/alerameli-E/breakable-toy---frontend
 
 ## Author
